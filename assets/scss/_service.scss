@@ -1,0 +1,54 @@
+.service{
+    background:  linear-gradient(#f6f7f8, #f6f7f8);
+    .title{
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+        padding: 64px 0;
+
+        &>h5{
+            font-size: $size-14;
+            color: $blue-1;
+        }
+
+        &>h3{
+            font-size: $size-40;
+            color: $blue-2;
+        }
+    }
+
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10%;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(#f6f7f8, #f6f7f8);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid $blue-1;
+            margin: 15px;
+            .description{
+
+                &>h4{
+                    color: $black-3;
+                    font-size: $size-22;
+                    margin-bottom: 10px;
+                }
+
+                &>p{
+                    color: #4f4f4f;
+                    background-color: #ececec;
+                    padding: 5px 12px;
+                }
+                
+            }
+
+        }
+    }
+}

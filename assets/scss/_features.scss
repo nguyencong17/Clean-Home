@@ -1,0 +1,29 @@
+// Features
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .card{
+        width: 25%;
+        text-align: center;
+        padding: 96px 72px;
+        &>img{
+            margin-bottom: 40px;
+        }
+        &>h4{
+            color: $blue-2;
+            font-size: $size-22;
+            font-weight: 500;
+            font-family: $font-secondary;
+            margin: 0 0 16px 0;
+        }
+        &>p{
+            font-size: $size-15;
+            color: $black-2;
+            margin-bottom: 40px;
+        }
+        &:nth-child(2),&:nth-child(4){
+            background: linear-gradient(#f6f7f8, #f6f7f8);;
+        }
+    }
+}

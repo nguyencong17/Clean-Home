@@ -1,0 +1,35 @@
+
+// Information
+
+.information{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#1240A7, #1240A7);
+    color: $white;
+    padding: 12px 20%;
+
+    // Contact
+    &-contact{
+        display: flex;
+
+        &>li {
+            padding: 0 12px;
+
+            &:first-child{
+                color: $orange;
+            }
+        }
+    }
+    // Time Work
+    &-time{
+        &>span{
+            color: $orange;
+        }
+    }
+
+    //Responsive
+    @include maxWidth(699px){
+        flex-direction: column;
+    }
+}

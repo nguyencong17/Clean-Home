@@ -1,0 +1,49 @@
+.work{
+    background: radial-gradient(farthest-corner at 60% 50%, #2054B8 43.23%, #1341A8 100%);
+    display: flex;
+    
+    &_content{
+        width: 60%;
+        padding: 143px 150px;
+        &>h2{
+            margin-bottom: 48px;
+            font-size: $size-40;
+            color: $white;
+            font-weight: 500;
+            letter-spacing: -1px;
+        }
+        &>p{
+            font-size: 16px;
+            color: rgba(255,255,255, 0.8);
+            margin-bottom: 48px;
+            line-height: 32px;
+        }
+        .mission-success{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card{
+                width: 33.3%;
+                border-radius: 8px;
+                border:1px solid rgba(255,255,255,0.1);
+                background: transparent ;
+                padding: 43px 11px;
+                margin: 0 15px;
+                text-align: center;
+                &>h4{
+                    font-size: 36px;
+                    color: $orange;
+                }
+                &>strong{
+                    font-size: 15px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    &_img{
+        width: 71%;
+        background-image: url(../img/her.png);
+        background-repeat: no-repeat
+    }
+}

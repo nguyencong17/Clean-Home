@@ -1,0 +1,35 @@
+.banner{
+    position: relative;
+    background: url(../img/img-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    padding: 160px;
+    &-content{
+        max-width: 555px;
+        background: radial-gradient(50% 50% at 50% 50%, #2054B8 43.23%, #1341A8 100%);;
+        text-align: center  ;
+        border-radius: 8px;
+        padding: 60px;
+        margin: 0;
+        &>p{
+
+            color: $blue-1;
+            font-size: $size-15;    
+        }
+
+        &>h5{
+
+            font-family: $font-secondary;
+            font-size: $size-72;
+            color: $white ;
+            margin: 35px 0;
+        }
+    }
+    @include maxWidth(991.8px){
+
+    }
+    @include maxWidth(767.98px){
+
+    }
+}
