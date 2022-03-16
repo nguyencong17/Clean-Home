@@ -370,7 +370,8 @@ li {
     background-repeat: no-repeat; }
 
 .news {
-  padding: 120px 0px 90px; }
+  padding: 120px 0px 90px;
+  background: linear-gradient(#f6f7f8, #f6f7f8); }
   .news-title {
     text-align: center;
     margin-bottom: 40px; }
@@ -443,7 +444,8 @@ li {
         bottom: 0; }
 
 .follow {
-  padding: 0px 0px 90px; }
+  padding: 0px 0px 90px;
+  background: linear-gradient(#f6f7f8, #f6f7f8); }
   .follow-title {
     text-align: center;
     margin-bottom: 40px; }
@@ -462,5 +464,23 @@ li {
       width: 100%;
       padding: 0 15px;
       border-radius: 8px; }
+
+.promotion {
+  padding: 84px 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .promotion > h2 {
+    width: 65%;
+    font-size: 40px;
+    font-family: "Rubik", sans-serif;
+    color: #1240A7;
+    padding: 0 10px;
+    text-align: left;
+    font-weight: 500; }
+  .promotion > button {
+    font-size: 14px;
+    padding: 0 10px;
+    padding: 14px 48px; }
 
 /*# sourceMappingURL=app.css.map */
