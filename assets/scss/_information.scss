@@ -19,17 +19,29 @@
             &:first-child{
                 color: $orange;
             }
+            @include maxWidth($sm){
+                padding: 3px 0;
+            }
         }
+        @include maxWidth($sm){
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
     }
     // Time Work
     &-time{
         &>span{
             color: $orange;
         }
+        @include maxWidth($sm){
+            padding: 3px 0;
+        }
     }
 
     //Responsive
-    @include maxWidth(699px){
+    @include maxWidth($md){
         flex-direction: column;
     }
 }

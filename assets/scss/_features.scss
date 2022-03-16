@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: no-wrap;
     .card{
         width: 25%;
         text-align: center;
@@ -22,8 +23,28 @@
             color: $black-2;
             margin-bottom: 40px;
         }
-        &:nth-child(2),&:nth-child(4){
-            background: linear-gradient(#f6f7f8, #f6f7f8);;
+        &>a>i{
+            display: inline-block;
+            width: 30px;
+            background-color: #828282;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
         }
+
+        &:nth-child(2),&:nth-child(4){
+            background: linear-gradient(#f6f7f8, #f6f7f8);
+        }
+        @include maxWidth($sm){
+            width: 100%;
+            padding: 40px;
+        }
+        @include maxWidth($lg){
+            padding: 40px 35px;
+        }
+    }
+    @include maxWidth($lg){
+        background: linear-gradient(#f6f7f8, #f6f7f8);
+        flex-wrap: wrap;
     }
 }

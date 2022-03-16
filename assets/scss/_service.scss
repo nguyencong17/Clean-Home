@@ -4,7 +4,7 @@
         max-width: 500px;
         margin: auto;
         text-align: center;
-        padding: 64px 0;
+        padding: 90px 0;
 
         &>h5{
             font-size: $size-14;
@@ -14,14 +14,22 @@
         &>h3{
             font-size: $size-40;
             color: $blue-2;
+            @include maxWidth($sm){
+                font-size: 30px;
+                margin-top: 20px;
+            }
+        }
+
+        @include maxWidth($lg){
+            padding: 50px 0;
         }
     }
 
     .list{
         display: flex;
         flex-wrap: wrap;
-        padding: 0 10%;
-        justify-content: center;
+        padding: 0 20%;
+        justify-content: space-between;
         align-items: center;
 
         .card{
@@ -32,13 +40,20 @@
             padding: 20px;
             border-radius: 10px;
             border: 1px solid $blue-1;
-            margin: 15px;
+            margin-bottom: 15px;
+            align-items: center;
             .description{
 
                 &>h4{
                     color: $black-3;
                     font-size: $size-22;
                     margin-bottom: 10px;
+                    @include maxWidth($sm){
+                        font-size: 18px;
+                    }
+                    @include maxWidth($lg){
+                        font-size: 18px;
+                    }
                 }
 
                 &>p{
@@ -46,9 +61,16 @@
                     background-color: #ececec;
                     padding: 5px 12px;
                 }
-                
+                @include maxWidth($lg){
+                    padding: 0 10px;
+                }
             }
-
+            @include maxWidth($sm){
+                width: 100%;
+            }
+        }
+        @include maxWidth($lg){
+            padding: 0 5%;
         }
     }
 }

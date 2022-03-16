@@ -12,24 +12,43 @@
         border-radius: 8px;
         padding: 60px;
         margin: 0;
+        @include maxWidth($xxl){
+            max-width: 363px;
+            margin: auto;
+        }
         &>p{
 
             color: $blue-1;
-            font-size: $size-15;    
+            font-size: $size-15;
+            @include maxWidth($sm){
+                font-size: 12px;
+            }    
         }
 
         &>h5{
-
             font-family: $font-secondary;
             font-size: $size-72;
             color: $white ;
             margin: 35px 0;
+            @include maxWidth($xxl){
+                font-size: 56px;
+            }
+            @include maxWidth($sm){
+                font-size: 28px;
+            }
+        }
+        .btn-explore{
+            @include maxWidth($sm){
+                font-size: 13px;
+                padding: 8px 16px;
+            }
+        }
+        @include maxWidth($sm){
+            padding: 22px;
         }
     }
-    @include maxWidth(991.8px){
-
+    @include maxWidth($xxl){
+        padding: 55px;
     }
-    @include maxWidth(767.98px){
 
-    }
 }

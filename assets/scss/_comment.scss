@@ -13,6 +13,9 @@
         font-weight: 600;
         margin: auto;
         margin-bottom: 48px;
+        @include maxWidth($lg){
+            font-size: 16px;
+        }
     }
     img.author {
         width: 75px;
@@ -26,5 +29,8 @@
         color: $blue-1;
         font-size: 14px;
         margin-bottom: 16px;
+    }
+    @include maxWidth($lg){
+        padding: 50px 10px;
     }
 }

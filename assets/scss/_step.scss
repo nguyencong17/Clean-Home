@@ -11,6 +11,7 @@
         &-name{
             color: $blue-1;
             margin-bottom: 8px;
+            font-size: 14px;
         }
 
         &-ask{
@@ -18,15 +19,21 @@
             color: $blue-2;
             font-family: $font-secondary;
             font-weight: 500;
+            @include maxWidth($lg){
+                font-size: 30px;
+            }
+        }
+        @include maxWidth($sm){
+            padding: 0 10px;
+            margin-bottom: 25px;
         }
 
     }
 
     &-tutorial{
         display: flex;
-        max-width: 80%;
-        margin: auto;
-
+        padding: 0 20%;
+        margin: 0 -34px;
         .card{
             margin-bottom: 32px ;
             padding: 0 34px;
@@ -41,10 +48,19 @@
                 margin: auto;
                 border-radius: 50%;
                 font-size: 18px;
+                @include maxWidth($lg){
+                    width: 30px;
+                    height: 30px;
+                    font-size: 12px;
+                    line-height: 30px;
+                }
             }
 
             &>img{
                 margin: 30px 0;
+                @include maxWidth($sm){
+                    margin: 0px 0;
+                }
             }
 
             &-title{
@@ -52,14 +68,35 @@
                 color: $black-3;
                 margin-bottom: 24px ;
                 font-weight: bold;
+                @include maxWidth($lg){
+                    font-size: 18px;
+                }
             }
 
             &>p{
                font-size: $size-16;
                color: $black-2;
                letter-spacing: 1px; 
+               @include maxWidth($lg){
+                font-size: 14px;
+            }
+            }
+            @include maxWidth($lg){
+                padding: 0 19px;
             }
 
         }
+        @include maxWidth($sm){
+            flex-direction: column;
+        }
+
+    }
+    .btn-step{
+        @include maxWidth($lg){
+            font-size: 12px;
+        }
+    }
+    @include maxWidth($lg){
+        padding: 40px 0;
     }
 }

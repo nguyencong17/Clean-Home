@@ -1,49 +1,99 @@
-.work{
-    background: radial-gradient(farthest-corner at 60% 50%, #2054B8 43.23%, #1341A8 100%);
+.work {
+    background: radial-gradient(farthest-corner at 60% 50%, #2054b8 43.23%, #1341a8 100%);
     display: flex;
-    
-    &_content{
+
+    &_content {
         width: 60%;
-        padding: 143px 150px;
-        &>h2{
+        padding: 143px 150px 143px 20%;
+        & > h2 {
             margin-bottom: 48px;
             font-size: $size-40;
             color: $white;
             font-weight: 500;
             letter-spacing: -1px;
+            @include maxWidth($xl) {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
         }
-        &>p{
+        & > p {
             font-size: 16px;
-            color: rgba(255,255,255, 0.8);
+            color: rgba(255, 255, 255, 0.8);
             margin-bottom: 48px;
             line-height: 32px;
         }
-        .mission-success{
+        .mission-success {
             display: flex;
             justify-content: center;
             align-items: center;
-            .card{
+            margin: 0 -15px;
+            .card {
                 width: 33.3%;
                 border-radius: 8px;
-                border:1px solid rgba(255,255,255,0.1);
-                background: transparent ;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: transparent;
                 padding: 43px 11px;
                 margin: 0 15px;
                 text-align: center;
-                &>h4{
-                    font-size: 36px;
+                & > h4 {
+                    font-size: 32px;
                     color: $orange;
+                    @include maxWidth($xxl) {
+                        font-size: 25px;
+                    }
+                    @include maxWidth($xl) {
+                        font-size: 19px;
+                    }
                 }
-                &>strong{
+                & > strong {
                     font-size: 15px;
                     color: $white;
+                    @include maxWidth($xxl) {
+                        font-size: 13px;
+                    }
+                    @include maxWidth($xxl) {
+                        font-size: 10px;
+                    }
                 }
+                @include maxWidth($sm){
+                    width: 100%;
+                    margin: 4% 2%;
+                }
+            }
+            @include maxWidth($sm){
+                flex-direction: column;
+            }
+        }
+        @include maxWidth($xxl) {
+            width: 50%;
+            padding: 143px 45px 143px 150px;
+        }
+        @include maxWidth($xl) {
+            padding: 143px 45px 143px 55px;
+        }
+        @include maxWidth($lg) {
+            padding: 0;
+            width: 100%;
+        }
+    }
+    &_img {
+        width: 71%;
+        @include maxWidth($xl) {
+            width: 50%;
+        }
+        @include maxWidth($lg) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            @include maxWidth($sm) {
+                width: 100%;
             }
         }
     }
-    &_img{
-        width: 71%;
-        background-image: url(../img/her.png);
-        background-repeat: no-repeat
+    @include maxWidth($lg) {
+        flex-direction: column;
+        padding: 60px 5% 0 5%;
     }
 }

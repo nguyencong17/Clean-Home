@@ -11,17 +11,32 @@
         & > h2 {
             font-size: 40px;
             color: $blue-2;
+            @include maxWidth($sm){
+                font-size: 30px;
+            }
         }
     }
     &-content{
         display: flex;
-        padding: 0 12%;
+        padding: 0 20%;
         justify-content: center;
         align-items: center;
+        margin: 0 -15px;
         img{
             width: 100%;
             padding: 0 15px;
             border-radius: 8px;
+            @include maxWidth($sm){
+                width: 50%;
+                padding: 15px 0;
+            }
+            @include maxWidth($sm){
+                padding: 15px 0;
+            }
+        }
+        @include maxWidth($sm){
+            flex-wrap: wrap;
+            flex-direction: column;
         }
     }
 }
