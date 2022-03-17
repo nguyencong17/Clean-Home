@@ -18,31 +18,30 @@
     }
     &-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        flex-wrap: no-wrap;
         margin: 0 -15px;
-        img {
-            width: 100%;
+        .card{
+            width: 25%;
             padding: 0 15px;
-            border-radius: 8px;
+            img{
+                width: 100%;
+                border-radius: 8px;
+            }
             @include maxWidth($lg) {
-                
+                width: 45%;
+                padding: 15px;
             }
             @include maxWidth($sm) {
-                padding: 15px 0;
+                width: 100%;
             }
         }
         @include maxWidth($sm) {
             flex-wrap: wrap;
-            flex-direction: column;
-            width: 100%;
-            margin: auto;
         }
-        @include maxWidth($sm) {
+        @include maxWidth($lg) {
             flex-wrap: wrap;
-            flex-direction: column;
-            width: 100%;
-            margin: auto;
         }
     }
     @include maxWidth($xxl) {
