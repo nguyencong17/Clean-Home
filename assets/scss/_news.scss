@@ -1,5 +1,6 @@
 .news {
-    padding: 120px 0px 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     background: linear-gradient(#f6f7f8, #f6f7f8);
     &-title {
         text-align: center;
@@ -18,7 +19,6 @@
     }
     &-content {
         display: flex;
-        padding: 0 20%;
         margin: 0 -15px;
         .card {
             width: 35%;
@@ -114,10 +114,14 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            padding: 0 5%;
         }
     }
     @include maxWidth($lg){
         padding: 60px 0;
+        @include container-lg;
+    }
+    @include maxWidth($sm){
+        padding: 60px 0;
+        @include container-sm;
     }
 }

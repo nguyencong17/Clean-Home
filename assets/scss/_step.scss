@@ -1,6 +1,8 @@
 .step{
     text-align: center;
-    padding: 90px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-left: -34px;
     background: linear-gradient(#f6f7f8, #f6f7f8);
     
     &_title{
@@ -32,8 +34,6 @@
 
     &-tutorial{
         display: flex;
-        padding: 0 20%;
-        margin: 0 -34px;
         .card{
             margin-bottom: 32px ;
             padding: 0 34px;
@@ -97,6 +97,9 @@
         }
     }
     @include maxWidth($lg){
-        padding: 40px 0;
+        @include container-lg
+    }
+    @include maxWidth($sm){
+        @include container-sm
     }
 }

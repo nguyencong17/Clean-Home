@@ -4,7 +4,9 @@
 
     &_content {
         width: 60%;
-        padding: 143px 150px 143px 20%;
+        padding-top: 143px;
+        padding-bottom: 143px;
+        padding-right: 10px;
         & > h2 {
             margin-bottom: 48px;
             font-size: $size-40;
@@ -64,16 +66,17 @@
                 flex-direction: column;
             }
         }
-        @include maxWidth($xxl) {
-            width: 50%;
-            padding: 143px 45px 143px 150px;
-        }
+
         @include maxWidth($xl) {
-            padding: 143px 45px 143px 55px;
+            width: 80%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            @include container-lg;
+            margin: 0;
         }
-        @include maxWidth($lg) {
-            padding: 0;
-            width: 100%;
+        @include maxWidth($sm) {
+            @include container-sm;
+            margin: 0;
         }
     }
     &_img {
@@ -94,6 +97,5 @@
     }
     @include maxWidth($lg) {
         flex-direction: column;
-        padding: 60px 5% 0 5%;
     }
 }

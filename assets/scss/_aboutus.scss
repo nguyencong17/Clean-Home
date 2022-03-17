@@ -30,7 +30,6 @@
         color: $white;
         padding: 160px 20% 160px 130px;
         .content {
-
             & > h6 {
                 font-size: $size-14;
                 color: $blue-1;
@@ -90,11 +89,15 @@
                 background-color: $white;
                 color: $black-1;
             }
-            @include maxWidth($sm){
-                padding: 40px;
-            }
+            // @include maxWidth($sm){
+            //     padding-top: 10%;
+            //     padding-bottom: 10%;
+            //     @include container-sm
+            // }
             @include maxWidth($lg){
-                padding: 40px;
+                padding-top: 10%;
+                padding-bottom: 10%;
+                @include container-lg
             }
         }
         @include maxWidth($sm){

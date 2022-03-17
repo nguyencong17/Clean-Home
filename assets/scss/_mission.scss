@@ -56,6 +56,9 @@
             max-width: 100%;
             padding: 60px 0;
         }
+        @include maxWidth($sm){
+            @include container-sm;
+        }
     }
     &_img{
         width: 40%;

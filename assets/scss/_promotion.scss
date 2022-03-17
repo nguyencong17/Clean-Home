@@ -1,8 +1,9 @@
 .promotion{
-    padding: 84px 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
     &>h2{
         width: 65%;
         font-size: $size-40;
@@ -11,10 +12,32 @@
         padding: 0 10px;
         text-align: left;
         font-weight: 500;
+        margin-left: -10px;
+        @include maxWidth($xl) {
+            font-size: 27px;
+        }
+        @include maxWidth($sm) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+        }
     }
     &>button{
         font-size: 14px;
         padding: 0 10px;
         padding: 14px 48px;
+        @include maxWidth($xl) {
+            font-size: 7px;
+            padding: 10px 40px;
+        }
+    }
+    @include maxWidth($xl) {
+        padding: 14px 0;
+        @include container-lg;
+    }
+    @include maxWidth($sm) {
+        padding: 14px 0;
+        flex-direction: column;       
+        @include container-sm;
     }
 }
