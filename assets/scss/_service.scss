@@ -73,6 +73,9 @@
             padding: 0;
         }
     }
+    @include maxWidth($xxl){
+        @include container-lg;
+    }
     @include maxWidth($xl){
         @include container-lg;
     }

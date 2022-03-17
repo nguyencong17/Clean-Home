@@ -89,6 +89,12 @@
         @include maxWidth($sm){
             flex-direction: column;
         }
+        @include maxWidth($xxl){
+            margin: 0 -34px;
+        }
+        @include maxWidth($lg){
+            margin: 0;
+        }
 
     }
     .btn-step{
@@ -96,7 +102,7 @@
             font-size: 12px;
         }
     }
-    @include maxWidth($lg){
+    @include maxWidth($xxl){
         @include container-lg
     }
     @include maxWidth($sm){

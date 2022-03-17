@@ -25,6 +25,9 @@
             width: 100%;
             padding: 0 15px;
             border-radius: 8px;
+            @include maxWidth($lg) {
+                
+            }
             @include maxWidth($sm) {
                 padding: 15px 0;
             }
@@ -35,6 +38,16 @@
             width: 100%;
             margin: auto;
         }
+        @include maxWidth($sm) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+        }
+    }
+    @include maxWidth($xxl) {
+        width: unset;
+        @include container-lg;
     }
     @include maxWidth($xl) {
         width: unset;

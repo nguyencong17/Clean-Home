@@ -1,6 +1,6 @@
 .promotion{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -30,6 +30,10 @@
             font-size: 7px;
             padding: 10px 40px;
         }
+    }
+    @include maxWidth($xxl) {
+        padding: 14px 0;
+        @include container-lg;
     }
     @include maxWidth($xl) {
         padding: 14px 0;

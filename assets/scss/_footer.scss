@@ -19,15 +19,26 @@
             font-size: 15px;
 
         }
-        .content{
-            display: flex;
-            justify-content: space-between;
-            color: $black-1;
-            width: 74%;
-            .card{
-                width: 40%;
-                padding: 0 10px;
+        .card , img {
+            @include maxWidth(1500px){
+                width: 33%;
+                padding: 15px;
             }
+            @include maxWidth($lg){
+                width: 33%;
+                padding: 15px;
+            }
+        }
+        @include maxWidth($xxl){
+            max-width: 80%;
+        }
+        @include maxWidth($lg){
+            padding: 0;
+            flex-wrap: wrap;
+            @include container-lg;
+            max-width: unset;
+            margin: -15px;
+            padding-bottom: 40px;
         }
     }
     .navigation{
@@ -55,12 +66,25 @@
                 margin-bottom: 12px;
                 padding: 0;
             }
+            @include maxWidth($lg){
+                width: 100%;
+            }
         }
         .list{
             display: flex;
             flex-direction: column;
             height: 200px;
             flex-wrap: wrap;
+        }
+        @include maxWidth($xxl){
+            padding-left: 31%;
+            padding-right: 10%;
+        }
+        @include maxWidth($lg){
+            padding: 0;
+            flex-direction: column;
+            @include container-lg;
+            margin: 0;
         }
     }
 
@@ -71,6 +95,20 @@
             font-size: 14px;
             font-weight: 500;
         }
+        @include maxWidth($xxl){
+            padding-left: 31%;
+            padding-right: 10%;
+        }
+        @include  maxWidth($lg){
+            @include container-lg;
+            margin: 0;
+        }
         
+    }
+    @include maxWidth($lg){
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }

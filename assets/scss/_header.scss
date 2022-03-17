@@ -38,7 +38,7 @@
             }
         }
     }
-    @include maxWidth(991.8px){
+    @include maxWidth($lg){
         justify-content: center;
         &-logo img{
             padding: 15px 0;
@@ -46,6 +46,9 @@
         &-navbar{
             display: none;
         }
+    }
+    @include maxWidth($xxl){
+        @include container-lg
     }
 
 }

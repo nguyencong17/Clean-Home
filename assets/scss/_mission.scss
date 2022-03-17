@@ -48,6 +48,10 @@
                 }
             }
         }
+        @include maxWidth($xxl){
+            max-width: 500px;
+            margin-left: 10%;
+        }
         @include maxWidth($xl){
             max-width: 485px;
         }

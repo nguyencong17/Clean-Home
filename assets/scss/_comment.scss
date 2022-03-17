@@ -37,6 +37,6 @@
         @include container-lg;
     }
     @include maxWidth($lg){
-        @include container-sm;
+        @include container-lg;
     }
 }

@@ -45,4 +45,10 @@
     @include maxWidth($md){
         flex-direction: column;
     }
+    @include maxWidth($xxl){
+        @include container-lg;
+    }
+    @include maxWidth($sm){
+        @include container-sm;
+    }
 }
